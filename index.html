@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Netflix | Landing Page UI Design</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.1.2/css/fontawesome.min.css"
+      integrity="sha384-X8QTME3FCg1DLb58++lPvsjbQoCT9bp3MsUU3grbIny/3ZwUJkRNO8NPW6zqzuW9"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="css/all.min.css" />
+    <link rel="stylesheet" href="css/master.css" />
+  </head>
+  <body>
+    <header>
+      <a href="#" class="logo"><img src="imgs/logo.png" /></a>
+      <ul class="navigation">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">TV Shows</a></li>
+        <li><a href="#">Latest</a></li>
+        <li><a href="#">My List</a></li>
+      </ul>
+      <div class="search">
+        <input type="text" placeholder="Search" />
+        <i class="fa-solid fa-magnifying-glass"></i>
+      </div>
+    </header>
+    <div class="banner">
+      <img src="imgs/bg.jpg" class="bg" />
+      <div class="content">
+        <img src="imgs/name.png" class="movieTitle" />
+        <h4>
+          <span>2020</span>
+          <span><i>12+</i></span>
+          <span>1h 55min</span>
+          <span>Action</span>
+        </h4>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum enim
+          ea, alias impedit expedita qui minima? Molestias a deserunt blanditiis
+          animi. Est dolore corporis aliquid quae. Adipisci amet expedita ex.
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum enim
+          ea, alias impedit expedita qui minima? Molestias a deserunt blanditiis
+          animi. Est dolore corporis aliquid quae. Adipisci amet expedita ex.
+        </p>
+        <div class="buttons">
+          <a href="#"><i class="fa-solid fa-play"></i> Play</a>
+          <a href="#"><i class="fa-solid fa-plus"></i> My List</a>
+        </div>
+      </div>
+      <a class="play" onclick="toggleVideo();">
+        <img src="imgs/play.png" />Watch Trailer
+      </a>
+    </div>
+    <div class="trailer">
+      <video
+        src="imgs/Disney's Mulan - Official Trailer.mp4"
+        controls="true"
+      ></video>
+      <img src="imgs/close.png" class="close" onclick="toggleVideo();" />
+    </div>
+    <script src="js/main.js"></script>
+  </body>
+</html>
